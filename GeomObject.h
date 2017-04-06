@@ -7,6 +7,12 @@ public:
 	~GeomObject();
 
 	void parse_pigment(FILE *fp);
+	void parse_transform(FILE *fp);
+
+	virtual void parse(FILE *fp) {
+		parse_pigment(fp);
+		parse_transform(fp);
+	}
 
 protected:
 
@@ -22,6 +28,14 @@ public:
 
 	Sphere(void);
 	~Sphere();
+
+	void parse_sphere(FILE *fp);
+
+	void parse(FILE *fp) {
+		GeomObject::parse(fp); // in java, super.parse(...)
+
+		parse_sphere(fp);
+	}
 
 private:
 
