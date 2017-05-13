@@ -3,7 +3,7 @@ class GeomObject {
 
 public:
 
-	GeomObject(void);
+	GeomObject();
 	~GeomObject();
 
 	void parse_pigment(FILE *fp);
@@ -26,7 +26,7 @@ class Sphere : public GeomObject { // derived (subcl)
 
 public:
 
-	Sphere(void);
+	Sphere();
 	~Sphere();
 
 	void parse_sphere(FILE *fp);

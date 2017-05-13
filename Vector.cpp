@@ -2,7 +2,7 @@
 #include "Vector.h"
 
 
-Vector::Vector(void) {
+Vector::Vector() {
 	p_x = p_y = p_z = 0;
 }
 
