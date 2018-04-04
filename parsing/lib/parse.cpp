@@ -28,3 +28,4 @@ vec3 Parse::Vector(std::stringstream & Stream)
 	return v;
 }
 
+// see: std::stof
